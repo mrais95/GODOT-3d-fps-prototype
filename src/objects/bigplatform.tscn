@@ -1,0 +1,251 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/modular-3d-platformer/Terrain_Escarpment_Mid_Corner_Outer.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://assets/modular-3d-platformer/Terrain_Escarpment_Top_Straight.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://assets/modular-3d-platformer/Terrain_Escarpment_Mid_Straight.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://assets/modular-3d-platformer/Terrain_Escarpment_Top_Corner_Outer.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://assets/modular-3d-platformer/Terrain_Grass_Flat.obj" type="ArrayMesh" id=5]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1.95033, 1, 1.78969 )
+
+[node name="big-platform" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+
+[node name="Terrain_Grass_Flat" type="MeshInstance" parent="MeshInstance"]
+transform = Transform( 3, 0, 0, 0, 2, 0, 0, 0, 3, 0, 2, 0 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Mid_Straight2" type="MeshInstance" parent="MeshInstance"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="LP" type="Spatial" parent="MeshInstance"]
+
+[node name="Terrain_Escarpment_Top_Straight" type="MeshInstance" parent="MeshInstance/LP"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Top_Straight2" type="MeshInstance" parent="MeshInstance/LP"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Top_Straight3" type="MeshInstance" parent="MeshInstance/LP"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, -1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Mid_Straight" type="MeshInstance" parent="MeshInstance/LP"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Mid_Straight3" type="MeshInstance" parent="MeshInstance/LP"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Mid_Straight4" type="MeshInstance" parent="MeshInstance/LP"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Top_Corner_Outer" type="MeshInstance" parent="MeshInstance/LP"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 2 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Mid_Corner_Outer" type="MeshInstance" parent="MeshInstance/LP"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 2 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="LP2" type="Spatial" parent="MeshInstance"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, 0, 0 )
+
+[node name="Terrain_Escarpment_Top_Straight" type="MeshInstance" parent="MeshInstance/LP2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Top_Straight2" type="MeshInstance" parent="MeshInstance/LP2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Top_Straight3" type="MeshInstance" parent="MeshInstance/LP2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, -1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Mid_Straight" type="MeshInstance" parent="MeshInstance/LP2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Mid_Straight3" type="MeshInstance" parent="MeshInstance/LP2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Mid_Straight4" type="MeshInstance" parent="MeshInstance/LP2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Top_Corner_Outer" type="MeshInstance" parent="MeshInstance/LP2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 2 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Mid_Corner_Outer" type="MeshInstance" parent="MeshInstance/LP2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 2 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="LP3" type="Spatial" parent="MeshInstance"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 0, 0, 0 )
+
+[node name="Terrain_Escarpment_Top_Straight" type="MeshInstance" parent="MeshInstance/LP3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Top_Straight2" type="MeshInstance" parent="MeshInstance/LP3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Top_Straight3" type="MeshInstance" parent="MeshInstance/LP3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, -1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Mid_Straight" type="MeshInstance" parent="MeshInstance/LP3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Mid_Straight3" type="MeshInstance" parent="MeshInstance/LP3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Mid_Straight4" type="MeshInstance" parent="MeshInstance/LP3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Top_Corner_Outer" type="MeshInstance" parent="MeshInstance/LP3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 2 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Mid_Corner_Outer" type="MeshInstance" parent="MeshInstance/LP3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 2 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="LP4" type="Spatial" parent="MeshInstance"]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 0, 0 )
+
+[node name="Terrain_Escarpment_Top_Straight" type="MeshInstance" parent="MeshInstance/LP4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Top_Straight2" type="MeshInstance" parent="MeshInstance/LP4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Top_Straight3" type="MeshInstance" parent="MeshInstance/LP4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, -1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Mid_Straight" type="MeshInstance" parent="MeshInstance/LP4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Mid_Straight3" type="MeshInstance" parent="MeshInstance/LP4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Mid_Straight4" type="MeshInstance" parent="MeshInstance/LP4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="Terrain_Escarpment_Top_Corner_Outer" type="MeshInstance" parent="MeshInstance/LP4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.25, 2 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Terrain_Escarpment_Mid_Corner_Outer" type="MeshInstance" parent="MeshInstance/LP4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 2 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0501685, 1.30466, -0.114003 )
+shape = SubResource( 1 )

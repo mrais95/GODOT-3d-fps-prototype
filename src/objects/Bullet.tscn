@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=2]
+
+[sub_resource type="GDScript" id=5]
+script/source = "extends RigidBody
+
+var shoot = false
+
+const damage = 50
+const speed = 50
+
+func _ready():
+	set_as_toplevel(true)
+
+func _physics_process(delta):
+	if shoot:
+		apply_impulse(transform.basis.z, -transform.basis.z * speed * delta)
+
+func _on_Area_body_entered(body) -> void:
+	if body.is_in_group(\"enemy\"):
+		body.health -= damage
+		queue_free()
+	else:
+		queue_free()
+"
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.05
+height = 0.1
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="CapsuleMesh" id=3]
+material = SubResource( 2 )
+radius = 0.05
+mid_height = 0.1
+
+[sub_resource type="CapsuleShape" id=4]
+radius = 0.06
+height = 0.12
+
+[node name="Bullet" type="RigidBody"]
+collision_layer = 0
+mass = 10.0
+gravity_scale = 0.0
+script = SubResource( 5 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="Area" type="Area" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+shape = SubResource( 4 )
+[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]

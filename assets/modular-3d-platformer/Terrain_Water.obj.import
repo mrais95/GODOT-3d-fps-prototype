@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Terrain_Water.obj-ad15b15515a0a35ae496e1b2bc08e2c9.mesh"
+
+[deps]
+
+files=[ "res://.import/Terrain_Water.obj-ad15b15515a0a35ae496e1b2bc08e2c9.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Terrain_Water.obj"
+dest_files=[ "res://.import/Terrain_Water.obj-ad15b15515a0a35ae496e1b2bc08e2c9.mesh", "res://.import/Terrain_Water.obj-ad15b15515a0a35ae496e1b2bc08e2c9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

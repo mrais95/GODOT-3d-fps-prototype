@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Daisy_Leaf.obj-1a27ca4d9aaf8ac7f1cc9f2fe3b912ab.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Daisy_Leaf.obj-1a27ca4d9aaf8ac7f1cc9f2fe3b912ab.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Prop_Daisy_Leaf.obj"
+dest_files=[ "res://.import/Prop_Daisy_Leaf.obj-1a27ca4d9aaf8ac7f1cc9f2fe3b912ab.mesh", "res://.import/Prop_Daisy_Leaf.obj-1a27ca4d9aaf8ac7f1cc9f2fe3b912ab.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

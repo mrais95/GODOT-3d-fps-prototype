@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Terrain_Mountain_1.obj-ff1a528c38c1381490405f647b6f0594.mesh"
+
+[deps]
+
+files=[ "res://.import/Terrain_Mountain_1.obj-ff1a528c38c1381490405f647b6f0594.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Terrain_Mountain_1.obj"
+dest_files=[ "res://.import/Terrain_Mountain_1.obj-ff1a528c38c1381490405f647b6f0594.mesh", "res://.import/Terrain_Mountain_1.obj-ff1a528c38c1381490405f647b6f0594.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

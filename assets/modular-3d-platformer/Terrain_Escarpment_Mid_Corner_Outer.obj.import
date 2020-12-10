@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Terrain_Escarpment_Mid_Corner_Outer.obj-50d276d7de52439c443bb0eb14ab7c3c.mesh"
+
+[deps]
+
+files=[ "res://.import/Terrain_Escarpment_Mid_Corner_Outer.obj-50d276d7de52439c443bb0eb14ab7c3c.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Terrain_Escarpment_Mid_Corner_Outer.obj"
+dest_files=[ "res://.import/Terrain_Escarpment_Mid_Corner_Outer.obj-50d276d7de52439c443bb0eb14ab7c3c.mesh", "res://.import/Terrain_Escarpment_Mid_Corner_Outer.obj-50d276d7de52439c443bb0eb14ab7c3c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

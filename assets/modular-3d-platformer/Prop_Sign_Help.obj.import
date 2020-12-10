@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Sign_Help.obj-ec38927ab4cb7a8a45843727d8767418.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Sign_Help.obj-ec38927ab4cb7a8a45843727d8767418.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Prop_Sign_Help.obj"
+dest_files=[ "res://.import/Prop_Sign_Help.obj-ec38927ab4cb7a8a45843727d8767418.mesh", "res://.import/Prop_Sign_Help.obj-ec38927ab4cb7a8a45843727d8767418.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

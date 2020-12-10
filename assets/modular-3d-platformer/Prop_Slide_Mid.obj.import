@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Slide_Mid.obj-0b1dba1ae9f40e9a961d0160c2a3b59b.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Slide_Mid.obj-0b1dba1ae9f40e9a961d0160c2a3b59b.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Prop_Slide_Mid.obj"
+dest_files=[ "res://.import/Prop_Slide_Mid.obj-0b1dba1ae9f40e9a961d0160c2a3b59b.mesh", "res://.import/Prop_Slide_Mid.obj-0b1dba1ae9f40e9a961d0160c2a3b59b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

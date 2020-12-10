@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/actors/mc.gd" type="Script" id=1]
+[ext_resource path="res://src/objects/DesertEagle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/deagle.ogg" type="AudioStream" id=3]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.5
+height = 1.5
+
+[sub_resource type="CapsuleMesh" id=2]
+radius = 0.5
+mid_height = 1.5
+
+[sub_resource type="Animation" id=3]
+resource_name = "shooting"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Head/DesertEagle:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.464181, -0.956123, -1.12997 ), Vector3( 0.464, -0.956, -1 ), Vector3( 0.464, -0.956, -1.13 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Head/DesertEagle:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 10, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[node name="mc" type="KinematicBody"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Head" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.836259, 0 )
+
+[node name="Camera" type="Camera" parent="Head"]
+current = true
+far = 500.0
+
+[node name="AimCast" type="RayCast" parent="Head/Camera"]
+enabled = true
+cast_to = Vector3( 0, 0, -1000 )
+
+[node name="HeadBonker" type="RayCast" parent="Head"]
+enabled = true
+cast_to = Vector3( 0, 1, 0 )
+
+[node name="DesertEagle" parent="Head" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.464181, -0.956123, -1.12997 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Head/DesertEagle"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.400244, -1.02672 )
+stream = ExtResource( 3 )
+
+[node name="SprintTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/shooting = SubResource( 3 )
+[connection signal="timeout" from="SprintTimer" to="." method="_on_SprintTimer_timeout"]

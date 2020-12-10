@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Sign_Arrow.obj-a295a850d8351a4490d9d5eb9e435640.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Sign_Arrow.obj-a295a850d8351a4490d9d5eb9e435640.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Prop_Sign_Arrow.obj"
+dest_files=[ "res://.import/Prop_Sign_Arrow.obj-a295a850d8351a4490d9d5eb9e435640.mesh", "res://.import/Prop_Sign_Arrow.obj-a295a850d8351a4490d9d5eb9e435640.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Tree_8.obj-5c8857b5781224e6a5be6f9fe0a78bca.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Tree_8.obj-5c8857b5781224e6a5be6f9fe0a78bca.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Prop_Tree_8.obj"
+dest_files=[ "res://.import/Prop_Tree_8.obj-5c8857b5781224e6a5be6f9fe0a78bca.mesh", "res://.import/Prop_Tree_8.obj-5c8857b5781224e6a5be6f9fe0a78bca.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

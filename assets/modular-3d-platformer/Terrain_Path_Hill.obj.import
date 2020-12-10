@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Terrain_Path_Hill.obj-f700f67b689df4160052d1bd415f5d66.mesh"
+
+[deps]
+
+files=[ "res://.import/Terrain_Path_Hill.obj-f700f67b689df4160052d1bd415f5d66.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Terrain_Path_Hill.obj"
+dest_files=[ "res://.import/Terrain_Path_Hill.obj-f700f67b689df4160052d1bd415f5d66.mesh", "res://.import/Terrain_Path_Hill.obj-f700f67b689df4160052d1bd415f5d66.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

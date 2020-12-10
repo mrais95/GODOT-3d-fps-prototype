@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Fence_Hill.obj-3a2788fd6dca62716170973d56811aae.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Fence_Hill.obj-3a2788fd6dca62716170973d56811aae.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Prop_Fence_Hill.obj"
+dest_files=[ "res://.import/Prop_Fence_Hill.obj-3a2788fd6dca62716170973d56811aae.mesh", "res://.import/Prop_Fence_Hill.obj-3a2788fd6dca62716170973d56811aae.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

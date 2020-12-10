@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/deagle.ogg-cacc4e552571db22d83b1276217cc430.oggstr"
+
+[deps]
+
+source_file="res://assets/deagle.ogg"
+dest_files=[ "res://.import/deagle.ogg-cacc4e552571db22d83b1276217cc430.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

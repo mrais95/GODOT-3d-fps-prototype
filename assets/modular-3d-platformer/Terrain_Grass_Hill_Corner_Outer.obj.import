@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Terrain_Grass_Hill_Corner_Outer.obj-a79ccf1e191bc036e6b27b9584f4618f.mesh"
+
+[deps]
+
+files=[ "res://.import/Terrain_Grass_Hill_Corner_Outer.obj-a79ccf1e191bc036e6b27b9584f4618f.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Terrain_Grass_Hill_Corner_Outer.obj"
+dest_files=[ "res://.import/Terrain_Grass_Hill_Corner_Outer.obj-a79ccf1e191bc036e6b27b9584f4618f.mesh", "res://.import/Terrain_Grass_Hill_Corner_Outer.obj-a79ccf1e191bc036e6b27b9584f4618f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

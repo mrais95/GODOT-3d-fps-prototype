@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Terrain_Grass_Flat.obj-214ea14ed41ff3f0e827bfeccd83659b.mesh"
+
+[deps]
+
+files=[ "res://.import/Terrain_Grass_Flat.obj-214ea14ed41ff3f0e827bfeccd83659b.mesh" ]
+
+source_file="res://assets/modular-3d-platformer/Terrain_Grass_Flat.obj"
+dest_files=[ "res://.import/Terrain_Grass_Flat.obj-214ea14ed41ff3f0e827bfeccd83659b.mesh", "res://.import/Terrain_Grass_Flat.obj-214ea14ed41ff3f0e827bfeccd83659b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
